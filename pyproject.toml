@@ -1,0 +1,29 @@
+[build-system] # Required
+requires = ["setuptools"] # Required
+build-backend = "setuptools.build_meta" # Required
+
+
+[project] # Required
+name = "loadfactors_setuptools" # Required
+version = "0.1.0"
+
+# Everything from here down is optional
+authors = [
+    {name = "Connor Ferster", email = "connor@structuralpython.com"}
+]
+dependencies = [
+    "numpy"
+]
+
+[project.urls]
+Home = "https://github.com/connorferster/loadfactors"
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+]
+
+doc = [
+    "sphinx",
+    "nbsphinx"
+]
